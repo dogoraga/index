@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meritvärdesräknare</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main-content">
+      <div class="container">
+        <h1>Meritvärdesräknare för Åk 9</h1>
+        <p>Välj betyget för varje ämne, och se ditt totala meritvärde!</p>
+        <form id="grade-form">
+          <div class="subject" id="subjects">
+            <!-- Subjects will be dynamically added here -->
+          </div>
+          <div class="language-option">
+            <input type="checkbox" id="language-toggle" checked>
+            <label for="language-toggle">Inkludera Moderna språk</label>
+          </div>
+          <button type="button" id="calculate-btn">Beräkna meritvärde</button>
+        </form>
+        <div class="result" id="result">
+          <h2>Totalt Meritvärde:</h2>
+          <p id="merit-score">0</p>
+        </div>
+
+        <p id="message"></p>
+        <div id="link-container" ></div>
+
+
+      </div><br><br><br><br><br>
+
+      <div id="merit-explanation">
+        <p><strong>Så här beräknas meritpoängen:</strong></p>
+        <p><strong>Betygen för varje kurs:</strong> För varje kurs får du ett betyg som motsvarar ett antal poäng:</p>
+        <ul>
+          <li>A = 20 poäng</li>
+          <li>B = 17,5 poäng</li>
+          <li>C = 15 poäng</li>
+          <li>D = 12,5 poäng</li>
+          <li>E = 10 poäng</li>
+          <li>F = 0 poäng (detta är underkänt).</li>
+        </ul>
+        <p><strong>Det maximala meritvärdet:</strong> För att räkna ut meritvärdet använder du betygsresultaten från kurserna i din slut betyg. Det finns ett maxvärde som är 340 meritpoäng som du kan få från extra tillval, som språk.</p>
+        <p><strong>Meritpoäng för tillval:</strong> Om du läser extra kurser, som moderna språk, kan du få meritpoäng som läggs till i ditt totala betyg. Detta kan ge upp till 20 extra meritpoäng.</p>
+        <p><strong>Exempel:</strong> Om du har betygen A i alla ämnen och läser tillvalet moderna språk kan du ha ett meritvärde som totalt sett blir högre än 320 poäng (som är det maximala för de vanliga kurserna) när tillvalen räknas med.</p>
+      </div>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2024 Mathias. All rights reserved.</p>
+      </footer>
+    
+   
+
+    <script src="main.js"></script>
+  </body>
+  
+</html>
