@@ -28,14 +28,44 @@ footer {
 }
 
 body {
-	font-family: Roboto, sans-serif;
-	margin: 0;
-	padding: 0;
-	background: linear-gradient(135deg, #3b8d99, #6b6e70);
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #3b8d99, #6b6e70);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;  /* Add this line */
+  justify-content: flex-start;  /* Aligns the content to the top */
+}
+
+.main-content {
+  flex-grow: 1; /* Ensures the content grows to fill remaining space */
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+}
+
+
+
+.main-content {
+  flex-grow: 1; /* Ensures the content grows to fill remaining space */
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
 }
 
 .container {
