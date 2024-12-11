@@ -196,12 +196,9 @@ button:active {
 }
 footer {
   position: fixed;
-  left: 0;
+  left: auto;
   bottom: 0;
-  width: auto;
-  background-color: red;
-  color: white;
-  text-align: center;
+  width: 100%;
 }
 
 footer p {
