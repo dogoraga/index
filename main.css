@@ -38,6 +38,13 @@ body {
   justify-content: flex-start;  /* Aligns the content to the top */
 }
 
+.main-content {
+	margin-left:auto;
+	margin-right:auto;
+
+
+	
+}
 
 
 footer {
