@@ -195,10 +195,13 @@ button:active {
 	}
 }
 footer {
-  position: fixed;
-  margin:0;
-  padding: 0;
-  width: 100%;
+  width: 100%;  /* Ensures full width */
+  background-color: #333; /* Example background color */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+  padding: 20px 0; /* Adjust padding as needed */
+  position: relative; /* Ensures it behaves correctly with other elements */
+  bottom: 0;
 }
 
 footer p {
