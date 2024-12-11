@@ -194,11 +194,11 @@ button:active {
 		padding: 10px 0
 	}
 }
-.footer {
+footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: auto;
   background-color: red;
   color: white;
   text-align: center;
