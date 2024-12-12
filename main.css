@@ -53,9 +53,23 @@ footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 0;
+  padding: 20px 0; /* Adds spacing inside the footer */
   position: fixed;
   bottom: 0;
+  left: 0; /* Ensures it aligns with the left edge */
+  box-sizing: border-box; /* Ensures padding doesn't affect the total width/height */
+  font-size: 14px; /* Sets a readable font size */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centers the text vertically and horizontally */
+  z-index: 1000; /* Ensures footer stays on top of other content */
+}
+
+@media (max-width: 600px) {
+  footer {
+    font-size: 12px; /* Adjusts font size for smaller screens */
+    height: 60px; /* Reduces footer height on smaller screens */
+  }
 }
 
 
